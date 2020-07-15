@@ -16,15 +16,20 @@ namespace Triangulo
             b = Convert.ToInt32(Console.ReadLine());
             Console.Write("Informe o valor do lado C do triângulo: ");
             c = Convert.ToInt32(Console.ReadLine());
-            if (a < b + c)
+            //if (a < b + c)
+            //{
+            //    if (b < a + c)
+            //    {
+            //        if (c < b + c)
+            //        {
+            //            msg = "Representam os lados de um triãngulo. ";
+            //        }
+            //    }
+            //}
+
+            if ((a < b+ c) && (b < a + c) && (c < a + b))
             {
-                if (b < a + c)
-                {
-                    if (c < b + c)
-                    {
-                        msg = "Representam os lados de um triãngulo. ";
-                    }
-                }
+                msg = "Representam os lados de um triãngulo. ";
             }
             Console.WriteLine(msg);
             Console.ReadKey();
