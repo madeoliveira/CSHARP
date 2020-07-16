@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30309.148
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalculoComRaio", "CalculoComRaio\CalculoComRaio.csproj", "{EE33B920-C67F-4E9F-9CE6-AE1F6ED75935}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EE33B920-C67F-4E9F-9CE6-AE1F6ED75935}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EE33B920-C67F-4E9F-9CE6-AE1F6ED75935}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EE33B920-C67F-4E9F-9CE6-AE1F6ED75935}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EE33B920-C67F-4E9F-9CE6-AE1F6ED75935}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C875E4BA-E853-46FD-B1BC-C939C36E4CE2}
+	EndGlobalSection
+EndGlobal
