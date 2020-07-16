@@ -8,9 +8,17 @@ namespace ParOuImpar1
 {
     class Program
     {
+        public static Boolean numeroPar(int num)
+        {
+            Boolean retorno = false;
+            if (num % 2 == 0) retorno = true;
+            return retorno;
+        }
         static void Main(string[] args)
         {
-            int n = 0,r=0;
+            int n = 0;
+            Boolean par = false;
+
             String op = "s";
 
             while (op == "s")
@@ -19,8 +27,8 @@ namespace ParOuImpar1
                 Console.WriteLine("Verificar se o número informado é par ou impar");
                 Console.Write("Informe um número: ");
                 n = Convert.ToInt32(Console.ReadLine());
-                r = n % 2;
-                if (r == 0)
+                par = numeroPar(n);
+                if (par == true)
                 {
                     Console.WriteLine("O número informado é par");
                 }
