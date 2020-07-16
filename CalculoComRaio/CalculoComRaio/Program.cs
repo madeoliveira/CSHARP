@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace CalculoComRaio
 {
@@ -10,7 +6,8 @@ namespace CalculoComRaio
     {
         static Double calculaDiametro(Double r)
         {
-            return 2 * r;
+            Double retorno = 2 * r;
+            return retorno;
         }
         static Double calculaArea(Double r)
         {
