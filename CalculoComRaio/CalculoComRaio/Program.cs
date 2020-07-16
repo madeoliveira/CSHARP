@@ -17,6 +17,15 @@ namespace CalculoComRaio
         {
             return 2*3.14*r;
         }
+        static void exibeResultado(Double a,Double b, Double c)
+        {
+            Console.WriteLine("Area: " + a);
+            Console.WriteLine("Diâmentro: " +b);
+            Console.WriteLine("Circunferência: " + c);
+           
+        }
+
+
         static void Main(string[] args)
         {
             Double raio = 0;
@@ -25,11 +34,9 @@ namespace CalculoComRaio
             Console.Write("Informe o raio: ");
             raio = Convert.ToDouble(Console.ReadLine());
             area = calculaArea(raio);
-            Console.WriteLine("Area: " + area);
-            Console.WriteLine("Diâmentro: " + calculaDiametro(raio));
-            Console.WriteLine("Circunferência: " + calculaCircunferencia(raio));
-            Console.ReadKey();
 
+            exibeResultado(area, calculaDiametro(raio), calculaCircunferencia(raio));
+            Console.ReadKey();
         }
     }
 }
