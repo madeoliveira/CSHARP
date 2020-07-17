@@ -4,6 +4,39 @@ namespace MaiorMenor
 {
     class Program
     {
+
+
+        static Double MaiorValor(Double[] v, int tl)
+        {
+
+            Double maior = v[0];
+            int i = 0;
+            for (i = 1; i < tl; i++)
+            {
+                if (maior < v[i])
+                {
+                    maior = v[i];
+                }
+               
+            }
+            return maior;
+        }
+
+        static Double MenorValor(Double[] v, int tl)
+        {
+
+            Double menor = v[0];
+            int i = 0;
+            for (i = 1; i < tl; i++)
+            {
+                if (menor > v[i])
+                {
+                    menor = v[i];
+                }
+
+            }
+            return menor;
+        }
         static void Main(string[] args)
         {
             int i = 0, tl = 0;
@@ -22,20 +55,9 @@ namespace MaiorMenor
             i = 0;
             if (tl > 0)
             {
-                maior = valores[0];
-                menor = valores[0];
-                for (i = 1; i < tl; i++)
-                {
-                    if (maior < valores[i])
-                    {
-                        maior = valores[i];
-                    }
-                    if(menor > valores[i])
-                    {
-                        menor = valores[i];
-                    }
-                }
 
+                maior = MaiorValor(valores, tl);
+                menor = MenorValor(valores, tl);
             }
             else
             {
